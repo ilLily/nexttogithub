@@ -18,5 +18,11 @@ const nextConfig = {
  5. npm run export=> 會出現old的資料夾=>成功
 
  到GITHUB
- 1.setting => developer Setting => 
-
+ 1.setting => 左最下developer Setting => Personal access tokens => token (classic)=>generate new token => general new token classic =>note寫個用途,expriation 可以改no expiration, 勾repo (全選)=>generate token 把token存起來
+ 2. 專案裡,=> setting => 左邊security 下的secrets&variables =>action=>new repositry secret => name:GH_DOCS && secret:把剛剛的token貼進來 => add secret
+ 3. 專案裡=>setting=> 左下的action=> general=> workflow permissions 改成 read and write permissions => save
+ 4. 專案最上面的Action =>newworkflow=> choose a workflow => search 'node.js'=>找到那個卡, 點configure, =>會出現那32行設定, 改貼下方34行的內容 => commit changes=>commit changes
+ 5. 專案裡=> <>Code =>按顏點點=>detail=>會看到build的狀態
+ 6. 專案裡=>setting=>左欄的pages=>branch 的none改成=>gh-pages =>save
+ 7. 專案裡=>setting=>左欄的pages=>就會出現可以看到網站的連結
+ 8. 圖片的路徑要再確認跟修改
