@@ -1,0 +1,22 @@
+開專案時, 確保package.json有自己要 install 的套件
+npm i 
+
+1. next.config.js 裡, 用以下設定
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  basePath: '/nexttogithub',
+  assetPrefix: '/nexttogithub',
+}
+ 2. package.json裡, 'script'裡加"export":"next export"
+
+ 3. terminal 裡 npm run build
+ 4. npm run build =>要成功
+ 5. npm run export=> 會出現old的資料夾=>成功
+
+ 到GITHUB
+ 1.setting => developer Setting => 
+

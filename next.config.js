@@ -10,7 +10,7 @@ const nextConfig = {
     loader: 'akamai',
     path: '',
   },
-  basePath: '/next-temple',
-  assetPrefix: '/next-temple',
+  basePath: '/nexttogithub',
+  assetPrefix: '/nexttogithub',
 }
 module.exports = nextConfig;
